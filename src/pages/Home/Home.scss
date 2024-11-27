@@ -1,0 +1,16 @@
+h1.hero-title {
+    font-size: 5rem;
+}
+
+p.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom, #decdb6, #f6f4f2);
+    background: linear-gradient(to bottom, #decdb6, #fff);
+}
+
+.thumbnail {
+    background: rgba($color: #decdb6, $alpha: .5);
+}
