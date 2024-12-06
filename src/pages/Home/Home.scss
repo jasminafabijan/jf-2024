@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables';
+
 h1.hero-title {
     font-size: 5rem;
 }
@@ -8,9 +10,11 @@ p.hero-subtitle {
 
 .gradient-background {
     background: linear-gradient(to bottom, #decdb6, #f6f4f2);
-    background: linear-gradient(to bottom, #decdb6, #fff);
+    background: linear-gradient(to bottom, $secondary-color, #fff);
 }
 
 .thumbnail {
-    background: rgba($color: #decdb6, $alpha: .5);
+    /*background: rgba($color: $secondary-color, $alpha: .5);*/
+    border: 1px solid #5E56E9;
+    border: 1px solid $secondary-color;
 }

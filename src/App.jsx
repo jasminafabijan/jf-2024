@@ -1,15 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import './assets/styles/main.scss';
+import Footer from './components/Footer/Footer';
+import { useScrollToSection } from './hooks/useScrollToSection';
 
 function App() {
+    useScrollToSection();
+
     return (
-        <Router>
-            <div className="App">
+        <div className="App d-flex flex-column min-vh-100">
+            <main className="flex-grow-1">
                 <Home />
-            </div>
-        </Router>
+            </main>
+            <Footer />
+        </div>
     );
 }
 

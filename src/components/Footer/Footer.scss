@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables';
+
+.footer {
+    background-color: $white;
+    
+    a {
+        color: $text-color;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $primary-color;
+        }
+    }
+} 
