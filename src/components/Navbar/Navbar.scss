@@ -1,7 +1,9 @@
+@import '../../assets/styles/variables';
+
 .navbar-brand img {
     width: 100px;
 }
 
-.active {
-    color: blueviolet !important;
+nav .nav-link {
+    color: $text-color;
 }

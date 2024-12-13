@@ -18,14 +18,14 @@ function NavbarComponent() {
     return (
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand as={Link} to="/">
                     <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo - Jasmina Fabijan" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home" className='me-3'>Home</Nav.Link>
-                        <Nav.Link href="#about" className='me-3'>About</Nav.Link>
+                        <Nav.Link as={Link} to="/" className='me-3'>Home</Nav.Link>
+                        <Nav.Link as={Link} to="/about" className='me-3'>About</Nav.Link>
                         <Nav.Link 
                             as={Link} 
                             to="/#contact" 

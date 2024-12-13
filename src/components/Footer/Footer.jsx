@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHeart } from 'react-icons/fa';
 import './Footer.scss';
 
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
                 <Row className="align-items-center">
                     <Col>
                     <p className="small text-muted mb-0">
-                             © {new Date().getFullYear()} Created by Jasmina Fabijan | All rights reserved 
+                             © {new Date().getFullYear()} Created with <FaHeart size={16} className='text-mauve' /> by Jasmina Fabijan | All rights reserved 
                         </p>
                     </Col>
                     <Col className="text-end">

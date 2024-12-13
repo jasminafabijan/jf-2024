@@ -1,6 +1,6 @@
 import React from 'react';
+import GradientHeader from '../../components/Layout/GradientHeader';
 import Hero from './Hero/Hero';
-import Navbar from '../../components/Navbar/Navbar';
 import ProjectsSection from './ProjectsSection/ProjectsSection';
 import Contact from './ContactSection/ContactSection';
 import './Home.scss';
@@ -8,10 +8,9 @@ import './Home.scss';
 function Home() {
     return (
         <>
-            <div className="home-header gradient-background">
-                <Navbar />
+            <GradientHeader>
                 <Hero />
-            </div>
+            </GradientHeader>
             <ProjectsSection />
             <Contact />
         </>
