@@ -8,11 +8,11 @@ function Footer() {
         <footer className="footer py-3">
             <Container>
                 <Row className="align-items-center">
-                    <Col>
-                    <p className="small text-muted mb-0">
+                    <div className="col-9">
+                        <p className="small text-muted mb-0">
                              © {new Date().getFullYear()} Created with <FaHeart size={16} className='text-mauve' /> by Jasmina Fabijan | All rights reserved 
                         </p>
-                    </Col>
+                    </div>
                     <Col className="text-end">
                         <a 
                             href="https://github.com/jasminafabijan" 

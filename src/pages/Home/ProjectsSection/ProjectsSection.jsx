@@ -21,9 +21,9 @@ function Projects() {
             </motion.h2>
 
             <Row className='align-items-center mb-5 py-5'>
-                <Col md={7} className="pe-lg-5">
+                <Col lg={7} className="pe-lg-5">
                     <motion.div 
-                        className="thumbnail cpvlab rounded-4"
+                        className="thumbnail cpvlab rounded-4 mb-4 mb-lg-0"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -33,7 +33,7 @@ function Projects() {
                     </motion.div>
                 </Col>
 
-                <Col md={5} className="ps-lg-5">
+                <Col lg={5} className="ps-lg-5">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -49,7 +49,19 @@ function Projects() {
             </Row>
 
             <Row className='align-items-center mb-5 py-5'>
-                <Col md={5} className="pe-lg-5">
+                <Col lg={7} className="order-lg-2 order-1">
+                    <motion.div 
+                        className="thumbnail rounded-4 mb-4 mb-lg-0"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                        <img src={cpvone} alt="CPV One" className="img-fluid rounded-4"/>
+                    </motion.div>
+                </Col>
+
+                <Col lg={5} className="pe-lg-5 order-lg-1 order-2">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -62,24 +74,12 @@ function Projects() {
                         <a href='https://cpvone.com/' className='btn btn-primary' target='_blank'>Visit website</a>
                     </motion.div>
                 </Col>
-
-                <Col md={7}>
-                    <motion.div 
-                        className="thumbnail rounded-4"
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                    >
-                        <img src={cpvone} alt="CPV One" className="img-fluid rounded-4"/>
-                    </motion.div>
-                </Col>
             </Row>
 
             <Row className='align-items-center mb-5 py-5'>
-                <Col md={7} className="pe-lg-5">
+                <Col lg={7} className="pe-lg-5">
                     <motion.div 
-                        className="thumbnail rounded-4"
+                        className="thumbnail rounded-4 mb-4 mb-lg-0"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -89,7 +89,7 @@ function Projects() {
                     </motion.div>
                 </Col>
 
-                <Col md={5} className="ps-lg-5">
+                <Col lg={5} className="ps-lg-5">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -105,7 +105,19 @@ function Projects() {
             </Row>
 
             <Row className='align-items-center mb-5 py-5'>
-                <Col md={5} className="pe-lg-5">
+                <Col lg={7} className="order-lg-2 order-1">
+                    <motion.div 
+                        className="thumbnail rounded-4 mb-4 mb-lg-0"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                        <img src={shootingPeople} alt="Shoooting People" className="img-fluid rounded-4"/>
+                    </motion.div>
+                </Col>
+
+                <Col lg={5} className="pe-lg-5 order-lg-1 order-2">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -118,24 +130,12 @@ function Projects() {
                         <a href='https://shootingpeople.org/' className='btn btn-primary' target='_blank'>Visit website</a>
                     </motion.div>
                 </Col>
-
-                <Col md={7}>
-                    <motion.div 
-                        className="thumbnail rounded-4"
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                    >
-                        <img src={shootingPeople} alt="Shoooting People" className="img-fluid rounded-4"/>
-                    </motion.div>
-                </Col>
             </Row>
 
             <Row className='align-items-center mb-5 py-5'>
-                <Col md={7} className="pe-lg-5">
+                <Col lg={7} className="pe-lg-5">
                     <motion.div 
-                        className="thumbnail rounded-4"
+                        className="thumbnail rounded-4 mb-4 mb-lg-0"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -145,7 +145,7 @@ function Projects() {
                     </motion.div>
                 </Col>
 
-                <Col md={5} className="ps-lg-5">
+                <Col lg={5} className="ps-lg-5">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}

@@ -9,12 +9,19 @@ p.hero-subtitle {
 }
 
 .gradient-background {
-    background: linear-gradient(to bottom, #decdb6, #f6f4f2);
     background: linear-gradient(to bottom, $secondary-color, #fff);
 }
 
 .thumbnail {
-    /*background: rgba($color: $secondary-color, $alpha: .5);*/
-    border: 1px solid #5E56E9;
     border: 1px solid $secondary-color;
+}
+
+@media (max-width: 767.98px) {
+    h1.hero-title {
+        font-size:3rem;
+    }
+
+    p.hero-subtitle {
+        font-size: 1.25rem;
+    }
 }
