@@ -7,6 +7,7 @@ import image1 from '../../assets/images/about/gallery-1.png';
 import image2 from '../../assets/images/about/gallery-2.png';
 import image3 from '../../assets/images/about/gallery-3.png';
 import image4 from '../../assets/images/about/gallery-4.png';
+import resume from '../../assets/Jasmina-Fabijan-Resume.pdf';
 
 
 function About() {
@@ -112,15 +113,16 @@ function About() {
                     Thank you for taking the time to learn more about me.<br></br>
                     Let's connect and bring your ideas to life!
                 </h5>
-                <motion.button
+                <motion.a
+                    href={resume}
                     className="btn btn-primary me-4"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    onClick={() => window.open('/path-to-your-cv.pdf')}
+                    download="Jasmina-Fabijan-Resume.pdf"
                 >
                     Download CV
-                </motion.button>
+                </motion.a>
                 <motion.a
                     href="mailto:jasmina.fabijan@gmail.com"
                     className="btn btn-primary"
