@@ -23,7 +23,6 @@ function ContactSection() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-center"
                 > 
-                    <p className='small mb-4'>Available for new projects starting February 2025.</p>
                     <a href='mailto:jf@jasminafabijan.com' className='btn btn-primary btn-lg'>Get in Touch</a>
                 </motion.div>
             </div>

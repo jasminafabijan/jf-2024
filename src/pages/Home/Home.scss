@@ -16,6 +16,28 @@ p.hero-subtitle {
     border: 1px solid $secondary-color;
 }
 
+.ratio {
+    &.ratio-16x9 {
+        border-radius: 0.375rem;
+        overflow: hidden;
+        
+        iframe {
+          border-radius: 0.375rem;
+        }
+    }
+  }
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    
+    &.avatar-md {
+      width: 48px;
+      height: 48px;
+    }
+}
+
 @media (max-width: 767.98px) {
     h1.hero-title {
         font-size:3rem;

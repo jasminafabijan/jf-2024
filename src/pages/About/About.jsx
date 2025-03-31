@@ -7,7 +7,7 @@ import image1 from '../../assets/images/about/gallery-1.png';
 import image2 from '../../assets/images/about/gallery-2.png';
 import image3 from '../../assets/images/about/gallery-3.png';
 import image4 from '../../assets/images/about/gallery-4.png';
-import resume from '../../assets/Jasmina-Fabijan-Resume.pdf';
+import resume from '../../assets/CV-Jasmina-Fabijan.pdf';
 
 
 function About() {
@@ -119,7 +119,7 @@ function About() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    download="Jasmina-Fabijan-Resume.pdf"
+                    download="CV-Jasmina-Fabijan.pdf"
                 >
                     Download CV
                 </motion.a>

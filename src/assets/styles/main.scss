@@ -30,6 +30,10 @@ h3 {
     color: $primary-color;
 }
 
+.border-secondary {
+    border: 1px solid $secondary-color !important;
+}
+
 .btn {
     border-radius: 2rem;
     padding: .5rem 1rem;
