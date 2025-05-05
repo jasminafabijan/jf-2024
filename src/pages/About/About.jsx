@@ -6,7 +6,7 @@ import mainImage from '../../assets/images/about/jasmina.jpeg';
 import image1 from '../../assets/images/about/gallery-1.png';
 import image2 from '../../assets/images/about/gallery-2.png';
 import image3 from '../../assets/images/about/gallery-3.png';
-import image4 from '../../assets/images/about/gallery-4.png';
+import image4 from '../../assets/images/about/gallery-5.png';
 import resume from '../../assets/CV-Jasmina-Fabijan.pdf';
 
 

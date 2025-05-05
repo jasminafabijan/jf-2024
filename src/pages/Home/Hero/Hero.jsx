@@ -20,8 +20,7 @@ function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
             >
-                Hi, my name is Jasmina Fabijan. Specializing in large-scale projects with admin dashboards,<br></br> I create and maintain responsive, user-friendly web interfaces using Bootstrap.<br></br> 
-                Dedicated to crafting clean, functional designs that enhance user experience.
+                Hi, I'm Jasmina Fabijan — a frontend developer and web designer focused on responsive, user-friendly interfaces. I work on everything from complex admin dashboards to marketing websites and landing pages, always aiming for clean structure, thoughtful UX, and well-organized, standards-compliant code.
             </motion.p>
         </Container>
     </div>
