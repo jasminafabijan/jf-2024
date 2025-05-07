@@ -11,7 +11,7 @@ function Testimonials() {
     };
 
     return (
-        <Container id="testimonials" className="my-5">
+        <Container id="testimonials" className="my-5 pb-5">
             <h2 className="text-center mb-5">Testimonials</h2>
             <Row>
                 <Col md={6} className="mb-4 pe-lg-5">

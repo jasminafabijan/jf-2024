@@ -1,7 +1,7 @@
 @import '../../assets/styles/variables';
 
 .navbar-brand img {
-    width: 100px;
+    width: 90px;
 }
 
 nav .nav-link {
@@ -9,10 +9,6 @@ nav .nav-link {
 
     &.active {
         text-decoration: underline;
-    }
-
-    &:last-child.active {
-        text-decoration: none;
     }
 }
 
@@ -31,10 +27,6 @@ nav .nav-link {
     transition: .5s ease-in-out;
     cursor: pointer;
     display: none; 
-
-    @media (max-width: 575.98px) {
-        /*display: block;*/
-    }
 
     span {
         display: block;

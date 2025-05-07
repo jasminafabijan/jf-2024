@@ -48,7 +48,9 @@ function NavbarComponent() {
                             About
                         </Nav.Link>
                         <Nav.Link 
-                            href="mailto:jasmina.fabijan@gmail.com"
+                            as={Link} 
+                            to="/contact" 
+                            className={`me-3 ${location.pathname === '/contact' ? 'active' : ''}`}
                             onClick={() => setIsOpen(false)}
                         >
                             Contact

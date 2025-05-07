@@ -30,8 +30,12 @@ h3 {
     color: $primary-color;
 }
 
+.text-muted {
+    color: $muted-color !important;
+}
+
 .border-secondary {
-    border: 1px solid $secondary-color !important;
+    border-color: $secondary-color !important;
 }
 
 .btn {

@@ -20,14 +20,14 @@ function Footer() {
                             rel="noopener noreferrer"
                             className="me-3"
                         >
-                            <FaGithub size={20} />
+                            <FaGithub size={22} />
                         </a>
                         <a 
                             href="https://www.linkedin.com/in/jasmina-fabijan-44381ab5/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            <FaLinkedin size={20} />
+                            <FaLinkedin size={22} />
                         </a>
                     </Col>
                 </Row>

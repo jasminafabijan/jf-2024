@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables';
+
+.w-15 {
+    width: 15%;
+}
+
+.border-2 {
+    border-color: $text-color !important;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid $muted-color;
+    border-radius: 0;
+    padding: 0.5rem 0;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $primary-color;
+    }
+
+    &::placeholder {
+        font-weight: 300;
+    }
+}
+
+.alert {
+    border: none;
+    font-weight: 300;
+}
