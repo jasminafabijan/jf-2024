@@ -7,10 +7,6 @@ function NavbarComponent() {
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
     return (
         <Navbar>
             <Container>
@@ -18,45 +14,32 @@ function NavbarComponent() {
                     <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo - Jasmina Fabijan" />
                 </Navbar.Brand>
 
-                <div 
-                    id="custom-toggler-icon" 
-                    className={isOpen ? 'open' : ''} 
-                    onClick={toggleMenu}
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <Navbar.Collapse id="basic-navbar-nav" className={isOpen ? 'show' : ''}>
-                    <Nav className="ms-auto">
-                        <Nav.Link 
-                            as={Link} 
-                            to="/" 
-                            className={`me-3 ${location.pathname === '/' ? 'active' : ''}`}
-                            onClick={() => setIsOpen(false)}
-                        >
-                            Home
-                        </Nav.Link>
-                        <Nav.Link 
-                            as={Link} 
-                            to="/about" 
-                            className={`me-3 ${location.pathname === '/about' ? 'active' : ''}`}
-                            onClick={() => setIsOpen(false)}
-                        >
-                            About
-                        </Nav.Link>
-                        <Nav.Link 
-                            as={Link} 
-                            to="/contact" 
-                            className={`me-3 ${location.pathname === '/contact' ? 'active' : ''}`}
-                            onClick={() => setIsOpen(false)}
-                        >
-                            Contact
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+                <Nav className="ms-auto">
+                    <Nav.Link 
+                        as={Link} 
+                        to="/" 
+                        className={`me-3 ${location.pathname === '/' ? 'active' : ''}`}
+                        onClick={() => setIsOpen(false)}
+                    >
+                        Home
+                    </Nav.Link>
+                    <Nav.Link 
+                        as={Link} 
+                        to="/about" 
+                        className={`me-3 ${location.pathname === '/about' ? 'active' : ''}`}
+                        onClick={() => setIsOpen(false)}
+                    >
+                        About
+                    </Nav.Link>
+                    <Nav.Link 
+                        as={Link} 
+                        to="/contact" 
+                        className={`me-3 ${location.pathname === '/contact' ? 'active' : ''}`}
+                        onClick={() => setIsOpen(false)}
+                    >
+                        Contact
+                    </Nav.Link>
+                </Nav>
             </Container>
         </Navbar>
   );
