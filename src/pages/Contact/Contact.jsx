@@ -13,7 +13,9 @@ function Contact() {
         e.preventDefault();
         setStatus({ type: 'info', message: 'Sending...' });
     
-        emailjs.sendForm('service_8kj15q5', 'template_bl9a55k', form.current, 'Mtd1ks7RbqJahS_pD')
+        emailjs.sendForm('service_8kj15q5', 'template_bl9a55k', form.current, {
+            publicKey: 'Mtd1ks7RbqJahS_pD',
+        })
           .then((result) => {
               setStatus({ type: 'success', message: 'Thanks! Your message was sent successfully — I’ll get back to you shortly.' });
               e.target.reset();
