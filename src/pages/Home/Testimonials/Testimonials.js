@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import testimonialAvatar from '../../../assets/images/testimonials/Kevin-M.png';
+import YouTubeLazyEmbed from '../../../components/YouTubeLazyEmbed';
 
 function Testimonials() {
     const testimonial = {
@@ -15,17 +16,9 @@ function Testimonials() {
             <h2 className="text-center mb-5">Testimonials</h2>
             <Row>
                 <Col md={6} className="mb-4 pe-lg-5">
-                    <Card className='border-secondary'>
+                    <Card className='border-secondary h-100'>
                         <Card.Body className='p-0'>
-                            <div className="ratio ratio-16x9">
-                                <iframe 
-                                src="https://www.youtube.com/embed/3NFCaKNwP3w?si=lVy7Y7BF5Eo3iKtV" 
-                                title="YouTube video player" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerPolicy="strict-origin-when-cross-origin" 
-                                allowFullScreen
-                                ></iframe>
-                            </div>
+                            <YouTubeLazyEmbed videoId="3NFCaKNwP3w" title="Video testimonial" />
                         </Card.Body>
                     </Card>
                 </Col>
