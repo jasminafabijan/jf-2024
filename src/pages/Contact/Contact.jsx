@@ -46,7 +46,7 @@ function Contact() {
 
                         <Form ref={form} onSubmit={sendEmail} className='mx-3 mx-md-0'>
                             <Form.Group controlId="formName">
-                                <Form.Control type="text" name="user_name" placeholder="Your full name" required />
+                                <Form.Control type="text" name="name" placeholder="Your full name" required />
                             </Form.Group>
         
                             <Form.Group controlId="formEmail" className="my-4">
