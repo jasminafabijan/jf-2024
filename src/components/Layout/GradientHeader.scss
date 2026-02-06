@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables';
+
+.gradient-background {
+    background: linear-gradient(to bottom, $secondary-color, $white);
+}
+
+.gradient-background__content {
+    padding-top: $navbar-height;
+}

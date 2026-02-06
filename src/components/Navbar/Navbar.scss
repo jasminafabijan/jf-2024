@@ -1,5 +1,20 @@
 @import '../../assets/styles/variables';
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background: transparent;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+
+    &.navbar--scrolled {
+        background: linear-gradient(to bottom, $secondary-color, $white);
+        box-shadow: 0 1px 0 rgba($text-color, 0.06);
+    }
+}
+
 .navbar-brand img {
     width: 90px;
 }
