@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import cpvlab from '../../../assets/images/projects/thumbnails/cpvlab.png';
 import cpvone from '../../../assets/images/projects/thumbnails/cpvone.png';
 import ruoom from '../../../assets/images/projects/thumbnails/ruoom.png';
+import dogLeg from '../../../assets/images/projects/thumbnails/dog-leg.png';
 import shootingPeople from '../../../assets/images/projects/thumbnails/shooting-people.png';
 import perilen from '../../../assets/images/projects/thumbnails/perilen.png';
 
@@ -113,7 +114,7 @@ function Projects() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <img src={shootingPeople} alt="Shoooting People" className="img-fluid rounded-4"/>
+                        <img src={dogLeg} alt="Dog Leg" className="img-fluid rounded-4"/>
                     </motion.div>
                 </Col>
 
@@ -124,10 +125,10 @@ function Projects() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h3>Shooting People</h3>
-                        <p className='mb-5 text-muted'>A vibrant community for independent filmmakers</p>
-                        <p className='mb-4'>Updated the website from Bootstrap 3 to Bootstrap 5 and implemented a new design provided by a designer.</p>
-                        <a href='https://shootingpeople.org/' className='btn btn-primary' target='_blank'>Visit website</a>
+                        <h3>Dog Leg</h3>
+                        <p className='mb-5 text-muted'>Project description</p>
+                        <p className='mb-4'>Add your project description here.</p>
+                        <a href='#' className='btn btn-primary' target='_blank'>Visit website</a>
                     </motion.div>
                 </Col>
             </Row>
@@ -141,7 +142,7 @@ function Projects() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <img src={perilen} alt="Perilen" className="img-fluid rounded-4"/>
+                        <img src={shootingPeople} alt="Shooting People" className="img-fluid rounded-4"/>
                     </motion.div>
                 </Col>
 
@@ -151,6 +152,34 @@ function Projects() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                        <h3>Shooting People</h3>
+                        <p className='mb-5 text-muted'>A vibrant community for independent filmmakers</p>
+                        <p className='mb-4'>Updated the website from Bootstrap 3 to Bootstrap 5 and implemented a new design provided by a designer.</p>
+                        <a href='https://shootingpeople.org/' className='btn btn-primary' target='_blank'>Visit website</a>
+                    </motion.div>
+                </Col>
+            </Row>
+
+            <Row className='align-items-center mb-5 py-5'>
+                <Col lg={7} className="order-lg-2 order-1">
+                    <motion.div 
+                        className="thumbnail rounded-4 mb-4 mb-lg-0"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                        <img src={perilen} alt="Perilen" className="img-fluid rounded-4"/>
+                    </motion.div>
+                </Col>
+
+                <Col lg={5} className="pe-lg-5 order-lg-1 order-2">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
                     >
                         <h3>Perilen</h3>
                         <p className='mb-5 text-muted'>Innovative organic dyes and pigments</p>
