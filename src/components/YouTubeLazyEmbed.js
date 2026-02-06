@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const YouTubeLazyEmbed = ({ videoId, title }) => {
   const [showIframe, setShowIframe] = useState(false);
 
+  // Koristimo maxresdefault za bolji kvalitet ako postoji, ili hqdefault
   const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
   return (
@@ -15,8 +16,13 @@ const YouTubeLazyEmbed = ({ videoId, title }) => {
         aspectRatio: '16/9',
         borderRadius: '0.375rem',
         overflow: 'hidden',
-        background: '#000',
-        cursor: 'pointer'
+        // Menjamo pozadinu u providnu da Safari ne bi imao šta da iscrta na ivicama
+        background: 'transparent', 
+        cursor: 'pointer',
+        // Ovi redovi ispod su ključni za Safari "edge" bug:
+        WebkitMaskImage: '-webkit-radial-gradient(white, black)',
+        WebkitTransform: 'translateZ(0)',
+        isolation: 'isolate'
       }}
       onClick={() => setShowIframe(true)}
     >
@@ -31,7 +37,7 @@ const YouTubeLazyEmbed = ({ videoId, title }) => {
             width: '100%',
             height: '100%',
             border: 'none',
-            borderRadius: '0.375rem'
+            display: 'block'
           }}
         />
       ) : (
@@ -42,8 +48,11 @@ const YouTubeLazyEmbed = ({ videoId, title }) => {
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
-              display: 'block'
+              // Force-ujemo sliku da popuni prostor bez obzira na njene originalne dimenzije
+              objectFit: 'cover', 
+              display: 'block',
+              // Blagi scale (1.01) ponekad pomaže da slika "precuri" piksel preko ivice i sakrije linije
+              transform: 'scale(1.01)'
             }}
           />
           <div
@@ -55,7 +64,8 @@ const YouTubeLazyEmbed = ({ videoId, title }) => {
               color: 'white',
               fontSize: 64,
               opacity: 0.85,
-              pointerEvents: 'none'
+              pointerEvents: 'none',
+              textShadow: '0 0 15px rgba(0,0,0,0.5)'
             }}
           >
             ▶

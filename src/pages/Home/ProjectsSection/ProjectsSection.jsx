@@ -125,10 +125,10 @@ function Projects() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h3>Dog Leg</h3>
-                        <p className='mb-5 text-muted'>Project description</p>
-                        <p className='mb-4'>Add your project description here.</p>
-                        <a href='#' className='btn btn-primary' target='_blank'>Visit website</a>
+                        <h3>.dog.leg.</h3>
+                        <p className='mb-5 text-muted'>Custom upholstery and furniture restoration workshop</p>
+                        <p className='mb-4'>Web design and development for a bilingual website on the Squarespace platform, focusing on a clean aesthetic that highlights handcrafted furniture restoration.</p>
+                        <a href='https://www.dogleg.cz/' className='btn btn-primary' target='_blank'>Visit website</a>
                     </motion.div>
                 </Col>
             </Row>
