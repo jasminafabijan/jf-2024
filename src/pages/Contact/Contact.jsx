@@ -13,7 +13,7 @@ function Contact() {
         e.preventDefault();
         setStatus({ type: 'info', message: 'Sending...' });
     
-        emailjs.sendForm('service_8kj15q5', 'template_bl9a55k', form.current, {
+        emailjs.sendForm('service_ecnz3i6', 'template_bl9a55k', form.current, {
             publicKey: 'Mtd1ks7RbqJahS_pD',
         })
           .then((result) => {
