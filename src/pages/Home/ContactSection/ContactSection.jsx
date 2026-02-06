@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './ContactSection.scss';
 
@@ -23,7 +24,7 @@ function ContactSection() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-center"
                 > 
-                    <a href='mailto:jf@jasminafabijan.com' className='btn btn-primary btn-lg'>Get in Touch</a>
+                    <Link to="/contact" className='btn btn-primary btn-lg'>Get in Touch</Link>
                 </motion.div>
             </div>
         </section>

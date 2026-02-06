@@ -24,7 +24,62 @@
     }
 }
 
-.alert {
+// Stilizovane poruke za kontakt formu (success / error)
+.contact-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
     border: none;
     font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    .contact-alert__icon {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 0.75rem;
+    }
+
+    .contact-alert__message {
+        flex: 1;
+    }
+
+    &--success {
+        background: $white;
+        box-shadow: 0 0 10px 0 rgba($primary-color, 0.3);
+        border-color: rgba($primary-color, 0.35);
+        color: $text-color;
+
+        .contact-alert__icon {
+            background: $primary-color;
+            background: #73b9a3;
+            color: $white;
+        }
+    }
+
+    &--error {
+        background: $white;
+        box-shadow: 0 0 10px 0 rgba($primary-color, 0.3);
+        border-color: rgba($primary-color, 0.35);
+        color: $text-color;
+
+        .contact-alert__icon {
+            background: #fe8a7f;
+            color: $white;
+        }
+    }
+
+    &--info {
+        background: rgba($muted-color, 0.12);
+        border-color: rgba($muted-color, 0.4);
+        color: $text-color;
+    }
 }

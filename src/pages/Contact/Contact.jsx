@@ -1,8 +1,28 @@
 import React, { useRef, useState } from 'react';
 import GradientHeader from '../../components/Layout/GradientHeader';
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
+import { FaCheck, FaTimes } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import './Contact.scss';
+
+const TEMP_SHOW_BOTH_ALERTS = false;
+
+function ContactAlert({ type, message }) {
+    const isSuccess = type === 'success';
+    const isError = type === 'danger' || type === 'error';
+    const variant = isSuccess ? 'success' : isError ? 'error' : 'info';
+    const showIcon = isSuccess || isError;
+    return (
+        <div className={`contact-alert contact-alert--${variant}`}>
+            {showIcon && (
+                <span className="contact-alert__icon">
+                    {isSuccess ? <FaCheck /> : <FaTimes />}
+                </span>
+            )}
+            <span className="contact-alert__message">{message}</span>
+        </div>
+    );
+}
 
 function Contact() {
 
@@ -17,7 +37,7 @@ function Contact() {
             publicKey: 'Mtd1ks7RbqJahS_pD',
         })
           .then((result) => {
-              setStatus({ type: 'success', message: 'Thanks! Your message was sent successfully — I’ll get back to you shortly.' });
+              setStatus({ type: 'success', message: "Thanks! Your message was sent successfully — I'll get back to you shortly." });
               e.target.reset();
           }, (error) => {
               setStatus({ type: 'danger', message: 'Failed to send message. Please try again.' });
@@ -38,10 +58,13 @@ function Contact() {
                 <div className='bg-white py-5 rounded-4'>
                     <div className='col-md-10 col-lg-9 col-xxl-8 mx-auto'>    
 
-                        {status.message && (
-                            <Alert variant={status.type} className="mb-4">
-                            {status.message}
-                            </Alert>
+                        {TEMP_SHOW_BOTH_ALERTS ? (
+                            <>
+                                <ContactAlert key="success" type="success" message="Thanks! Your message was sent successfully — I'll get back to you shortly." />
+                                <ContactAlert key="error" type="danger" message="Failed to send message. Please try again." />
+                            </>
+                        ) : (
+                            status.message && <ContactAlert type={status.type} message={status.message} />
                         )}
 
                         <Form ref={form} onSubmit={sendEmail} className='mx-3 mx-md-0'>
