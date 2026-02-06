@@ -30,6 +30,7 @@ const YouTubeLazyEmbed = ({ videoId, title }) => {
           style={{
             width: '100%',
             height: '100%',
+            border: 'none',
             borderRadius: '0.375rem'
           }}
         />

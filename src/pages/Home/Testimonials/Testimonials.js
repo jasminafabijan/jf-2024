@@ -17,7 +17,7 @@ function Testimonials() {
             <Row>
                 <Col md={6} className="mb-4 pe-lg-5">
                     <Card className='border-secondary h-100'>
-                        <Card.Body className='p-0'>
+                        <Card.Body className='p-4 d-flex align-items-center justify-content-center'>
                             <YouTubeLazyEmbed videoId="3NFCaKNwP3w" title="Video testimonial" />
                         </Card.Body>
                     </Card>
