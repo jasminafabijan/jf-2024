@@ -55,7 +55,7 @@ function Contact() {
             </section>
 
             <div className='container'>
-                <div className='bg-white py-5 rounded-4'>
+                <div className='bg-white py-5 rounded-4 mb-5'>
                     <div className='col-md-10 col-lg-9 col-xxl-8 mx-auto'>    
 
                         {TEMP_SHOW_BOTH_ALERTS ? (

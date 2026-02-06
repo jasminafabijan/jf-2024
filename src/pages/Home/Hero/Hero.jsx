@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <div id="home" className="py-5 mt-5">
+    <div id="home" className="py-md-5 mt-5">
         <Container className='mb-5'>
             <motion.h1 
                 className="hero-title mb-4"

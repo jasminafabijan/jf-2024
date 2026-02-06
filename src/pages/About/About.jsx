@@ -14,7 +14,7 @@ function About() {
     return (
         <>
         <GradientHeader>
-            <Container className="mt-5 pt-5">
+            <Container className="mt-5 pt-md-5">
                 <Row className="align-items-center mb-5">
                     <Col lg={6} className='pe-lg-5'>
                         <motion.div
@@ -53,7 +53,7 @@ function About() {
         </GradientHeader>
 
         <Container className="my-5 py-5">
-            <Row className="mt-5">
+            <Row className="mt-md-5">
                 <div className='col-6 col-md-3'>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}

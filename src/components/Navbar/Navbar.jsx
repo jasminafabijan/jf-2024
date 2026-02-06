@@ -8,7 +8,7 @@ function NavbarComponent() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <Navbar>
+        <Navbar className="pt-3">
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo - Jasmina Fabijan" />

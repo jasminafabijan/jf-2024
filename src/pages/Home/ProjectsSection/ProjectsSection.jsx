@@ -10,9 +10,9 @@ import perilen from '../../../assets/images/projects/thumbnails/perilen.png';
 
 function Projects() {
     return (
-        <Container id="projects" className="my-5 py-5">
+        <Container id="projects" className="my-5 py-md-5">
             <motion.h2 
-                className="text-center mb-5 pb-4"
+                className="text-center mb-5 pb-md-4"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -21,7 +21,7 @@ function Projects() {
                 Selected Projects
             </motion.h2>
 
-            <Row className='align-items-center mb-5 py-5'>
+            <Row className='align-items-center mb-md-5 py-5'>
                 <Col lg={7} className="pe-lg-5">
                     <motion.div 
                         className="thumbnail cpvlab rounded-4 mb-4 mb-lg-0"
@@ -49,7 +49,7 @@ function Projects() {
                 </Col>
             </Row>
 
-            <Row className='align-items-center mb-5 py-5'>
+            <Row className='align-items-center mb-md-5 py-5'>
                 <Col lg={7} className="order-lg-2 order-1">
                     <motion.div 
                         className="thumbnail rounded-4 mb-4 mb-lg-0"
@@ -77,7 +77,7 @@ function Projects() {
                 </Col>
             </Row>
 
-            <Row className='align-items-center mb-5 py-5'>
+            <Row className='align-items-center mb-md-5 py-5'>
                 <Col lg={7} className="pe-lg-5">
                     <motion.div 
                         className="thumbnail rounded-4 mb-4 mb-lg-0"
@@ -105,7 +105,7 @@ function Projects() {
                 </Col>
             </Row>
 
-            <Row className='align-items-center mb-5 py-5'>
+            <Row className='align-items-center mb-md-5 py-5'>
                 <Col lg={7} className="order-lg-2 order-1">
                     <motion.div 
                         className="thumbnail rounded-4 mb-4 mb-lg-0"
@@ -133,7 +133,7 @@ function Projects() {
                 </Col>
             </Row>
 
-            <Row className='align-items-center mb-5 py-5'>
+            <Row className='align-items-center mb-md-5 py-5'>
                 <Col lg={7} className="pe-lg-5">
                     <motion.div 
                         className="thumbnail rounded-4 mb-4 mb-lg-0"
@@ -161,7 +161,7 @@ function Projects() {
                 </Col>
             </Row>
 
-            <Row className='align-items-center mb-5 py-5'>
+            <Row className='align-items-center mb-md-5 py-5'>
                 <Col lg={7} className="order-lg-2 order-1">
                     <motion.div 
                         className="thumbnail rounded-4 mb-4 mb-lg-0"
