@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## iCloud project (working on multiple devices)
+
+If the project is in an iCloud folder, **node_modules** would otherwise sync between computers and can break the install. To keep the code in sync while giving each device its own install:
+
+**On the first device (once):**
+```bash
+npm install
+npm run setup-icloud
+npm start
+```
+
+**On every other device (after iCloud has synced the project):**
+```bash
+npm install
+npm run setup-icloud
+npm start
+```
+
+The script moves packages into `node_modules.nosync` (iCloud skips that folder), and `node_modules` becomes a symlink. The code still syncs, and `npm start` works on both devices.
+
 ## Available Scripts
 
 In the project directory, you can run:
