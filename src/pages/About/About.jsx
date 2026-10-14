@@ -2,7 +2,7 @@ import React from 'react';
 import GradientHeader from '../../components/Layout/GradientHeader';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import mainImage from '../../assets/images/about/jasmina.jpeg';
+import mainImage from '../../assets/images/about/jasmina.png';
 import image1 from '../../assets/images/about/gallery-1.png';
 import image2 from '../../assets/images/about/gallery-2.png';
 import image3 from '../../assets/images/about/gallery-3.png';
@@ -44,7 +44,8 @@ function About() {
                             <img 
                                 src={mainImage} 
                                 alt="Jasmina Fabijan" 
-                                className="img-fluid rounded-4 mt-5 mt-lg-0"
+                                className="img-fluid rounded-4 mt-5 mt-lg-0 d-block mx-auto"
+                                style={{ maxHeight: 383, width: 'auto' }}
                             />
                         </motion.div>
                     </Col>
